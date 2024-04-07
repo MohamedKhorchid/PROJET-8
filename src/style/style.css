@@ -7,8 +7,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 720px;
-  margin: 45px 0px 50px 0px;
+  justify-content: space-between;
+  margin: 45px 120px 50px 120px;
 }
 .navigation__menu {
   list-style-type: none;
@@ -44,11 +44,11 @@ a {
 }
 .hook__banner__image {
   height: 223px;
-  width: 1240px;
+  width: calc(100% - 230px);
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 25px;
-  filter: brightness(0.3);
+  filter: brightness(0.4);
 }
 .hook__banner__text {
   color: white;
@@ -65,7 +65,7 @@ a {
   height: 209px;
   width: 100%;
   background-color: black;
-  margin-top: 139px;
+  margin-top: 50px;
 }
 .footer__image__K {
   width: 31px;
@@ -141,4 +141,406 @@ a {
   font-weight: 500;
   text-decoration-line: underline;
   color: #000;
+}
+
+.gallery {
+  width: calc(100% - 230px);
+  height: 100%;
+  border-radius: 25px;
+  background: #F6F6F6;
+  margin-top: 43px;
+  padding-bottom: 50px;
+}
+.gallery__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.red__box {
+  height: 340px;
+  background-color: #FF6060;
+  border-radius: 10px;
+  width: calc(30% - 25px);
+  position: relative;
+}
+.red__box__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.red__box__name {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+.red__box__div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding-top: 56px;
+}
+
+.hook__about__banner {
+  height: 223px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+.hook__about__image {
+  height: 223px;
+  width: 1240px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+  filter: brightness(0.7);
+}
+
+.caroussel {
+  width: calc(100% - 230px);
+  height: 415px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.caroussel__box {
+  display: flex;
+  justify-content: center;
+}
+.caroussel__image {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+.caroussel__image__number {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  color: white;
+}
+.caroussel__arrow__left {
+  width: 50px;
+  position: absolute;
+  z-index: 999;
+  left: 30px;
+}
+.caroussel__arrow__right {
+  width: 50px;
+  position: absolute;
+  z-index: 999;
+  right: 30px;
+}
+
+.house {
+  position: relative;
+}
+.house__info__title {
+  color: #FF6060;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  margin-left: 115px;
+}
+.house__info__location {
+  margin-left: 115px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  margin-top: -30px;
+}
+.house__host {
+  position: absolute;
+  right: 115px;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.house__host__name {
+  color: #FF6060;
+  width: 93px;
+  font-size: 18px;
+}
+.house__host__picture {
+  width: 64px;
+  height: 64px;
+  border-radius: 360%;
+}
+.house__tags {
+  margin-left: 115px;
+}
+.house__tags__tag {
+  border: none;
+  background-color: #FF6060;
+  border-radius: 10px;
+  margin-right: 20px;
+  color: white;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  padding: 7px 40px 7px 40px;
+}
+.house__description, .house__equipments {
+  width: 50%;
+}
+.house__description__equipments {
+  display: flex;
+  flex-direction: row;
+  width: calc(100% - 230px);
+  margin-top: 30px;
+  margin-left: 115px;
+  gap: 76px;
+}
+.house__description__equipments__title {
+  width: 100%;
+  height: 52px;
+  border: none;
+  border-radius: 10px;
+  background-color: #FF6060;
+  color: white;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10px;
+}
+.house__description__equipments__box {
+  background-color: rgba(246, 246, 246, 0.45);
+  padding: 20px 20px;
+  border-radius: 10px;
+}
+.house__description__equipments__text {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.about__collapse {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: calc(100% - 430px);
+  margin-left: 215px;
+  margin-bottom: 30px;
+}
+.about__collapse__title {
+  width: 100%;
+  height: 52px;
+  border: none;
+  border-radius: 10px;
+  background-color: #FF6060;
+  color: white;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10px;
+}
+.about__collapse__box {
+  background-color: rgba(246, 246, 246, 0.4509803922);
+  border-radius: 10px;
+  padding: 0px 28px 0px 20px;
+}
+.about__collapse__text {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  .navigation {
+    margin: 20px 20px 27px 20px;
+  }
+  .navigation__logo {
+    width: 145px;
+  }
+  .navigation__menu {
+    gap: 26px;
+  }
+  .navigation__menu__item {
+    font-size: 16px;
+  }
+  .navigation__menu__item__active::after {
+    top: 20px;
+  }
+  .hook__banner {
+    height: 110px;
+  }
+  .hook__banner__image {
+    width: calc(100% - 20px);
+    height: 111px;
+    border-radius: 10px;
+  }
+  .hook__banner__text {
+    width: 210px;
+    font-size: 24px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    left: 30px;
+    bottom: 35px;
+    line-height: 100%;
+  }
+  .footer {
+    height: 209px;
+    width: 100%;
+    background-color: black;
+    margin-top: 50px;
+  }
+  .footer__text {
+    width: 115px;
+    text-align: center;
+    margin-top: -15px;
+    font-size: 14px;
+  }
+  .gallery {
+    width: calc(100% - 20px);
+    background-color: white;
+    margin-top: -20px;
+    padding-bottom: 0;
+  }
+  .red__box {
+    height: 340px;
+    background-color: #FF6060;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+  }
+  .caroussel {
+    width: calc(100% - 40px);
+    height: 255px;
+  }
+  .caroussel__image {
+    border-radius: 10px;
+  }
+  .caroussel__image__number {
+    display: none;
+  }
+  .caroussel__arrow__left {
+    width: 30px;
+    left: 5px;
+  }
+  .caroussel__arrow__right {
+    width: 30px;
+    right: 5px;
+  }
+  .house {
+    position: relative;
+    width: 100%;
+  }
+  .house__info__title {
+    font-size: 18px;
+    margin-left: 20px;
+  }
+  .house__info__location {
+    margin-left: 20px;
+    font-size: 14px;
+    margin-top: -15px;
+  }
+  .house__host {
+    right: 20px;
+    top: 30px;
+  }
+  .house__host__name {
+    font-size: 12px;
+    margin-right: -10px;
+  }
+  .house__host__picture {
+    width: 32px;
+    height: 32px;
+  }
+  .house__tags {
+    margin-left: 20px;
+  }
+  .house__tags__tag {
+    margin-right: 10px;
+    font-size: 10px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+  }
+  .house__description, .house__equipments {
+    width: 100%;
+  }
+  .house__description__equipments {
+    width: calc(100% - 40px);
+    margin-top: 30px;
+    margin-left: 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .house__description__equipments__title {
+    width: 100%;
+    height: 30px;
+    font-size: 13px;
+  }
+  .house__description__equipments__text {
+    font-size: 13px;
+  }
+  .error {
+    width: 100%;
+  }
+  .error__404 {
+    width: 100%;
+    font-size: 96px;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .error__text {
+    width: 260px;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .error__redirect {
+    font-size: 14px;
+  }
+  .hook__about__banner {
+    width: calc(100% - 40px);
+    height: 111px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+  }
+  .hook__about__image {
+    width: 100%;
+    height: 100%;
+  }
+  .about__collapse {
+    width: calc(100% - 40px);
+    margin-left: 20px;
+  }
+  .about__collapse__title {
+    height: 30px;
+    font-size: 13px;
+  }
+  .about__collapse__box {
+    padding: 0px 28px 0px 20px;
+  }
+  .about__collapse__text {
+    font-size: 13px;
+  }
 }/*# sourceMappingURL=style.css.map */

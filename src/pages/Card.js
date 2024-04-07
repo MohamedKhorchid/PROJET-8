@@ -1,4 +1,16 @@
+import Header from "../component/Header";
+import Caroussel from "../component/Caroussel";
+import Footer from "../component/Footer";
+import HouseInfo from "../component/HouseInfo";
+
 function Card() {
-    return(<h1>Carte de logements</h1>)
+    return(
+        <div>
+            <Header/>
+            <Caroussel/>
+            <HouseInfo/>
+            <Footer/>
+        </div>
+    )
 }
 export default Card;

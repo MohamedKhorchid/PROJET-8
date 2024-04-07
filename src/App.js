@@ -12,7 +12,7 @@ function App() {
         <Routes>
           <Route path="/" Component={Home}></Route> 
           <Route path="/About" Component={About}></Route>
-          <Route path="/Card" Component={Card}></Route>
+          <Route path="/Card/:id" Component={Card}></Route>
           <Route path="*" Component={ErrorPage}></Route>
         </Routes>
       </BrowserRouter>
