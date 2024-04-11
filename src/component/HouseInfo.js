@@ -34,6 +34,10 @@ function HouseInfo() {
                         ))}
                     </div>
 
+                    <div className="house__ratings">
+                         
+                    </div>
+
                     <div className="house__description__equipments">
                         <Collapse 
                             divClassName="house__description"

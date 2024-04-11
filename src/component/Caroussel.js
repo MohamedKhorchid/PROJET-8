@@ -1,8 +1,8 @@
 import informations from "../data/information.json"
 import ErrorContent from "./ErrorContent"
 import { useParams } from "react-router-dom"
-import arrowRight from "../images/chevron-right.svg"
-import arrowLeft from "../images/chevron-left-svgrepo-com.svg"
+import arrowRight from "../images/Vectorarrowright.png"
+import arrowLeft from "../images/Vectorarrowleft.svg"
 
 function Caroussel() {
     const {id} = useParams()
@@ -54,6 +54,14 @@ function Caroussel() {
                                          * sera automatiquement interprêté comme étant du texte et sur le site ça affichera
                                          * "textPosition/data.pictures.length"
                                          */
+    }
+    
+    if(data.pictures.length === 1) {
+        const carousselArrowLeft = document.querySelector(".caroussel__arrow__left")
+        const carousselArrowRight = document.querySelector(".caroussel__arrow__right")
+
+        carousselArrowLeft.style.visibility = "hidden"
+        carousselArrowRight.style.visibility = "hidden"
     }
 
 

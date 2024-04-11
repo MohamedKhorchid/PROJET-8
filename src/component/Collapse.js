@@ -1,4 +1,5 @@
 import { useState } from "react";
+import arrowCollapse from "../images/arrow_back_ios-24px 2.png"
 
 function Collapse({title, content, divClassName, titleClassName, contentDivClassName}) {
     const [isCollapsed, setIsCollapsed] = useState(true)
@@ -8,7 +9,10 @@ function Collapse({title, content, divClassName, titleClassName, contentDivClass
 
     return(
         <div className={divClassName}>
-            <button onClick={toggleCollapse} className={titleClassName}>{title}</button>
+            <button onClick={toggleCollapse} className={titleClassName}>
+                {title}
+                <img src={arrowCollapse} className={`arrow__collapse ${isCollapsed ? "" : "arrow__collapse__up"}`}></img>
+            </button>
                 {!isCollapsed && 
                     <div className={contentDivClassName}>
                         {content} 
