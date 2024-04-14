@@ -6,6 +6,7 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
+
 .navigation {
     height: 68px;
     display: flex;
@@ -232,7 +233,7 @@ a {
 
     &__image {
         height: 223px;
-        width: 1240px;
+        width: calc(100% - 230px);
         object-fit: cover;
         border-radius: 25px;
         filter: brightness(0.7);
@@ -344,6 +345,16 @@ a {
         }
     }
 
+    &__ratings {
+        position: absolute;
+        right: 115px;
+        margin-top: -20px;
+
+        &__star {
+            margin-right: 10px;
+        }
+    }
+
     &__description, &__equipments {
         width: calc(100% / 2);
     }
@@ -352,7 +363,7 @@ a {
         display: flex;
         flex-direction: row;
         width: calc(100% - 230px);
-        margin-top: 30px;
+        margin-top: 40px;
         margin-left: 115px;
         gap: 76px;
 
@@ -433,7 +444,158 @@ a {
     right: 20px;
 
     &__up {
-       transform: rotate(180deg); 
+       transform: rotate(180deg);  
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .navigation {
+        margin: 20px 50px 27px 50px;
+    }
+
+    .hook__banner {
+    
+        &__image {
+            width: calc(100% - 100px);
+        }
+    
+        &__text {
+            font-size: 36px;
+        }
+    }
+
+    .gallery {
+        width: calc(100% - 100px);
+    }
+
+    .red__box {
+        height: 240px;
+    
+        &__name {
+            font-size: 14px;
+        }
+    }
+
+    .caroussel {
+        width: calc(100% - 100px);
+    
+        &__arrow {
+            &__left {
+                width: 30px;
+            }
+    
+            &__right {
+                width: 30px;
+            }
+        }
+    }
+    
+    .house {
+        position: relative;
+    
+        &__info {
+            &__title {
+                font-size: 30px;
+                margin-left: 60px; 
+            } 
+    
+            &__location {
+                margin-left: 60px;
+                font-size: 14px;
+                margin-top: -20px;
+            }
+        }
+    
+        &__host {
+            right: 60px;
+    
+            &__name {
+                color: #FF6060;
+                font-size: 14px;
+            }
+    
+            &__picture {
+                width: 45px;
+                height: 45px;
+            }
+        }
+    
+        &__tags {
+            margin-left: 60px;
+    
+            &__tag {
+                font-size: 12px;
+                padding: 7px 30px 7px 30px;
+            }
+        }
+    
+        &__ratings {
+            right: 60px;
+
+            &__star {
+                width: 18px;
+            }
+        }
+
+        &__description__equipments {
+            width: calc(100% - 100px);
+            margin-left: 60px;
+    
+            &__title {
+                height: 45px;
+                font-size: 14px;
+            }
+    
+            &__text {
+                font-size: 14px; 
+            }
+        }
+    }
+    
+    .about__collapse {
+        width: calc(100% - 230px);
+        margin-left: 115px;
+    
+        &__title {
+            height: 45px;
+            font-size: 14px;
+        }
+
+        &__text {
+            font-size: 14px;
+        }
+    }
+
+    .hook__about{
+    
+        &__image {
+            width: calc(100% - 100px);
+        }
+    }  
+    
+    .error {
+        width: 100%;
+    
+        &__404 {
+            width: 100%;
+            font-size: 100px;
+            margin-bottom: 60px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        &__text {
+            width: 260px;
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+    
+        &__redirect {
+            font-size: 14px;
+        }
     }
 }
 
@@ -449,7 +611,7 @@ a {
             gap: 26px;
 
             &__item {
-                font-size: 16px;
+                font-size: 14px;
 
                 &__active {
                     &::after {
@@ -472,10 +634,8 @@ a {
         }
 
         &__text { 
-            width: 210px;
+            width: 230px;
             font-size: 24px;
-            justify-content: flex-start;
-            flex-wrap: wrap;
             left: 30px;
             bottom: 35px;
             line-height: 100%;
@@ -541,7 +701,7 @@ a {
         &__info {
             &__title {
                 font-size: 18px;
-                margin-left: 20px;  
+                margin-left: 20px; 
             } 
 
             &__location {
@@ -553,11 +713,12 @@ a {
 
         &__host {
             right: 20px;
-            top: 30px;
+            top: 100px;
 
             &__name {
                 font-size: 12px;
-                margin-right: -10px;
+                width: 50px;
+                margin-right: 15px;
             }
 
             &__picture {
@@ -572,8 +733,18 @@ a {
             &__tag {
                 margin-right: 10px;
                 font-size: 10px;
-                padding: 5px 20px 5px 20px;
+                padding: 5px 15px 5px 15px;
                 border-radius: 5px;
+            }
+        }
+
+        &__ratings {
+            left: 25px;
+            top: 135px;
+
+            &__star {
+                width: 15px;
+                height: 15px;
             }
         }
 
@@ -583,7 +754,7 @@ a {
 
         &__description__equipments {
             width: calc(100% - 40px);
-            margin-top: 30px;
+            margin-top: 90px;
             margin-left: 20px;
             gap: 20px;
             display: flex;

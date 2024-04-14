@@ -55,15 +55,6 @@ function Caroussel() {
                                          * "textPosition/data.pictures.length"
                                          */
     }
-    
-    if(data.pictures.length === 1) {
-        const carousselArrowLeft = document.querySelector(".caroussel__arrow__left")
-        const carousselArrowRight = document.querySelector(".caroussel__arrow__right")
-
-        carousselArrowLeft.style.visibility = "hidden"
-        carousselArrowRight.style.visibility = "hidden"
-    }
-
 
     if(data === undefined){
         return(
