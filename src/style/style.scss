@@ -295,7 +295,8 @@ a {
             font-size: 36px;
             font-style: normal;
             font-weight: 500;
-            margin-left: 115px;  
+            margin-left: 115px; 
+            width: 500px; 
         } 
 
         &__location {
@@ -497,6 +498,7 @@ a {
             &__title {
                 font-size: 30px;
                 margin-left: 60px; 
+                width: 500px;
             } 
     
             &__location {
@@ -522,10 +524,12 @@ a {
     
         &__tags {
             margin-left: 60px;
+            width: 500px;
     
             &__tag {
                 font-size: 12px;
-                padding: 7px 30px 7px 30px;
+                padding: 7px 25px 7px 25px;
+                margin-bottom: 10px;
             }
         }
     
@@ -702,6 +706,7 @@ a {
             &__title {
                 font-size: 18px;
                 margin-left: 20px; 
+                width: 300px;
             } 
 
             &__location {
@@ -729,6 +734,7 @@ a {
 
         &__tags {
             margin-left: 20px;
+            width: 350px;
 
             &__tag {
                 margin-right: 10px;
