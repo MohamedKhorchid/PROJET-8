@@ -1,26 +1,18 @@
 import { useParams } from "react-router-dom";
 import informations from "../data/information.json"
-import ErrorContent from "./ErrorContent";
 import Collapse from "./Collapse";
 
 function HouseInfo() {
     const {id} = useParams()
     const data = informations.find(data => data.id === id)
 
-    if(data === undefined){
-        return(
-            <div>
-                <ErrorContent/>
-            </div>
-        )
-    } else {
+    if(data){
 
         const rating = parseInt(data.rating);
 
         const stars = [];
         for(let i = 0; i < 5; i++) {
             if (i < rating) {
-                // Étoile rouge
                 stars.push(
                     <svg key={i} xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none" className="house__ratings__star" style={{fill: "#FFD700"}}>
                         <path d="M13.7212 0.843656C13.4728 0.328088 12.9479 0 12.3714 0C11.7949 0 11.2747 0.328088 11.0216 
@@ -33,7 +25,6 @@ function HouseInfo() {
                     </svg>
                 );
             } else {
-                // Étoile grise
                 stars.push(
                     <svg key={i} xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none" className="house__ratings__star">
                         <path d="M13.7212 0.843656C13.4728 0.328088 12.9479 0 12.3714 0C11.7949 0 11.2747 0.328088 11.0216 

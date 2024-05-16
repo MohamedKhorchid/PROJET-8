@@ -1,4 +1,5 @@
 import Red from "./Red";
+
 function Gallery() {
     return(
         <div className="gallery__box">
