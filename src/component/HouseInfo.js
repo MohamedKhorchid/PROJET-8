@@ -54,8 +54,8 @@ function HouseInfo() {
                     </div>
 
                     <div className="house__tags">
-                        {data.tags.map((tag) => (
-                            <button className="house__tags__tag">{tag}</button>
+                        {data.tags.map((tag, index) => (
+                            <button key={index} className="house__tags__tag">{tag}</button>
                         ))}
                     </div>
 
@@ -80,8 +80,8 @@ function HouseInfo() {
                             titleClassName="house__description__equipments__title"
                             content={
                                 <div className="house__description__equipments__box">
-                                    {data.equipments.map((equipment) => 
-                                        <p className="house__description__equipments__text">{equipment}</p>
+                                    {data.equipments.map((equipment, index) => 
+                                        <p  key={index} className="house__description__equipments__text">{equipment}</p>
                                     )}
                                 </div>
                             }>   

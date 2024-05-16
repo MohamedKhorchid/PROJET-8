@@ -3,7 +3,7 @@ import Caroussel from "../component/Caroussel";
 import Footer from "../component/Footer";
 import HouseInfo from "../component/HouseInfo";
 
-function Card() {
+function Card() { 
     return(
         <div>
             <Header/>
